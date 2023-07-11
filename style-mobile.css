@@ -1,20 +1,11 @@
 
 /*모바일*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 577px){
     html { 
         font-size: 20px;
     }
 }
 
-/*패드*/
-@media screen and (max-width:1023px){
-    html {font-size: 40px;}
-}
-
-/*데스크탑*/
-@media screen and (min-width:1024px){
-    html {font-size: 50px;}
-}
 /* 폰트 */
 @font-face {
     font-family: 'HANAMDAUM';
