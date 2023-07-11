@@ -189,10 +189,10 @@ details[open] div {
     width: 100%;
     background-color: darkseagreen;
     position: fixed;
-    top: 5%;
+    top: 2%;
     display: table;
 
-    font-size:0.9rem;
+    font-size:1rem;
     font-weight: bold;
 }
 
@@ -203,7 +203,7 @@ details[open] div {
 }
 
 #info-header p{ 
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-weight: lighter;
     width: 70%;
     float: left;
@@ -225,7 +225,7 @@ details[open] div {
     height: 10%;
     width: 100%;
     position: fixed;
-    bottom: 3%;
+    bottom: 1%;
 }
 
 #buttons ul {
@@ -236,7 +236,7 @@ details[open] div {
 
 #buttons ul li{
     width: 33%;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     vertical-align: middle;
     list-style: none;
