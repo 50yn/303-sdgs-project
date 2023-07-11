@@ -1,0 +1,329 @@
+
+/*모바일*/
+@media screen and (max-width: 767px){
+    html { 
+        font-size: 20px;
+    }
+}
+
+/*패드*/
+@media screen and (max-width:1023px){
+    html {font-size: 40px;}
+}
+
+/*데스크탑*/
+@media screen and (min-width:1024px){
+    html {font-size: 50px;}
+}
+/* 폰트 */
+@font-face {
+    font-family: 'HANAMDAUM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'HANAMDAUM';
+    font-weight: 400;
+}
+.subhead {
+    font-family: 'KIMM_Bold';
+}
+.text, .form_radio_btn {
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+/* 배경 */
+body {
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    height: 100vh;
+
+    background: #FFF;
+    background-image: linear-gradient(#EEE .05em, transparent .05em), linear-gradient(90deg, #EEE .05em, transparent .05em);
+    background-size: 1em 1em;
+}
+
+/* 이미지 */
+img {
+    max-width: 95%;
+    height: auto;
+}
+
+/* 메인 페이지================================*/
+/* 헤더 */
+#main-header{
+    width: 100%;
+    margin: 5% 0%;
+    text-align: center;
+}
+
+#main-header h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto;
+}
+
+#main-header p {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+/* nav */
+#menu ul {
+    display: flex;
+    height: 20%;
+    padding-left: 0;
+}
+
+#menu ul li{
+    width: 25%;
+    background-color:darkseagreen;
+    font-size: 0.7rem;
+    padding: 2%;
+    text-align: center;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    display: block;
+    color:black;
+    font-weight: bold;
+}
+
+/* 미리보기 */
+#news {
+    height: 40%;
+    margin-bottom: 10%;
+    padding: 0% 5%;
+    display: table;
+    font-size: 0.5rem;
+    vertical-align: middle;
+}
+
+.preview {
+    width: 45%;
+    float: left;
+    margin: 2% 2%;
+    display: table-cell;
+}
+
+/* 사이트 소개 */
+#intro{
+    width: 90%;
+    padding: 5% 5%;
+    background-color: darkseagreen;
+    font-size: 0.8rem
+}
+
+#intro h3 {
+    margin:0;
+    font-size: 0.5rem;
+}
+
+#intro h4 {
+    margin:10px 0;
+    font-size: 0.35rem;
+    font-weight: lighter;
+}
+
+#intro p {
+    font-size: 0.5rem;
+}
+
+/*더보기*/
+#details {
+    padding-bottom: 5%;
+}
+details { 
+    margin: 5% 5%;
+}
+
+details > summary {
+    height: 1rem;
+    background-color:#BF8B2E;
+    outline: 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    vertical-align: middle;
+    transition: background 0.5s;
+}
+
+details[open] > summary {
+    border-radius: 20px 20px 0 0;
+}
+
+details.a[open] div {
+    background-image: url("./images/sdgs12-5.png");
+}
+details.b[open] div {
+    background-image: url("./images/sdgs12-6.png");
+}
+details.c[open] div {
+    background-image: url("./images/sdgs12-a.png");
+}
+details.d[open] div {
+    background-image: url("./images/sdgs12-b.png");
+}
+
+details[open] > summary ~ *{
+    animation: reveal 0.5s;
+    padding: 0 5%;
+    font-size: 0.5rem;
+}
+details[open] div {
+    height: 550px;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+#info-header {
+    width: 100%;
+    background-color: darkseagreen;
+    position: fixed;
+    top: 5%;
+    display: table;
+
+    font-size:0.9rem;
+    font-weight: bold;
+}
+
+#info-header h1{
+    padding: 0 5%;
+    font-size: 1rem;
+    float: left;
+}
+
+#info-header p{ 
+    font-size: 0.5rem;
+    font-weight: lighter;
+    width: 70%;
+    float: left;
+    vertical-align: center;
+}
+
+
+/* 이미지 */
+#i {
+    padding: 35% 0%;
+}
+
+.infographic {
+    margin: 0% 2%;
+}
+
+/* 페이지 전환 버튼----------------*/
+#buttons{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 3%;
+}
+
+#buttons ul {
+    padding: 4% 0;
+    display: flex;
+    background-color: darkseagreen;
+}
+
+#buttons ul li{
+    width: 33%;
+    font-size: 0.6rem;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+}
+
+#buttons #none {
+    display: none;
+}
+
+
+/* 퀴즈 ================================ */
+/*헤더*/
+#quiz-header {
+    width: 100%;
+    background-color: darkseagreen;
+    margin-top: 5%;
+    padding: 3px;
+    vertical-align: center;
+    text-align: center;
+}
+
+#quiz-header h1 {
+    font-size:1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#quiz-header p {
+    margin-top: 0;
+    font-size: 0.5em;
+}
+
+#form-section {
+    padding: 5% 2%;
+}
+
+/*라디오 버튼*/
+
+.form-label{
+    float: left;
+    margin-top: 5%;
+    margin-right: 3%;
+    font-size: 0.7rem;
+}
+
+.form_radio_btn {
+    width: 20%;
+    height : 45px;
+    border: 1px solid #EAE7E7;
+    background-color: #EEE;
+    border-radius: 10px;
+    float: left;
+    margin: 1% 1%;
+}
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+.form_radio_btn label {
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    height: -webkit-fill-available;
+    line-height: 45px;
+    font-size: 0.5rem;
+}
+
+.entry {
+    width: 50%;
+    height : 45px;
+    border: 1px solid #EAE7E7;
+    background-color: #EEE;
+    border-radius: 10px;
+    margin: 0 1%; 
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+    background: darkseagreen;
+    border-width: 0;
+}
